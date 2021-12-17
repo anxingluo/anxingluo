@@ -33,7 +33,24 @@
     </div>
     <script>
         window.onload = function () {
-            window.alert('1')
+            let copyText = ''
+            window.addEventListener('touchstart', function (e) {
+                // console.log(window.getSelection().toString());
+                // console.log('e', e.target.innerText);
+
+                // window.alert('1')
+            })
+            // window.addEventListener('mousemove', function (e) {
+            //     console.log(window.getSelection().toString());
+            // })
+            window.addEventListener('touchenter', function (e) {
+                console.log('e', e);
+                window.alert('e', e.target.innerText)
+            })
+
+            function showDomName() {
+
+            }
 
         }
     </script>
